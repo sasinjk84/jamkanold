@@ -1,0 +1,74 @@
+<link rel="stylesheet" type="text/css" href="/css/newUI.css" />
+
+<!--  메인 테마카테고리및 개별카테고리출력 등 -->
+<style type="text/css">
+#__ID__{ clear:both; padding-bottom:1px; height:230px;}
+#__ID__ .productWrapper{ width:270px; height:343px; }
+#__ID__ .productWrapper .infoArea .itemname{position:relative;height:80px;background:#fff;z-index:20;}
+#__ID__ .productWrapper .infoArea .itemprice{ position:absolute; top:0px; width:270px; height:505px;background:rgba(49, 50, 53, 0.2);z-index:10;}
+#__ID__ .productWrapper.over .infoArea .itemprice{top:-50px;}
+#__ID__ .productWrapper .rentIcon,#__ID__ .productWrapper .sellIcon{ top:0px;}
+
+</style>
+
+<script language="javascript" type="text/javascript">
+$j(function(){
+	$j('#__ID__').find('.productWrapper').on('mouseover',function(e){ overItem(this)});
+	$j('#__ID__').find('.productWrapper').on('mouseout',function(e){ leaveItem(this)});
+});
+</script>
+
+<div id="__ID__">
+<!-- items -->
+	<div class="productWrapper product.listfinal" style="cursor:pointer">
+		<a href="product.linkurl">
+		product.saleTypeIcon
+		<!--<div class="productImg" style="display:table-cell;height:300px;vertical-align:middle;text-align:center;overflow:hidden;"><img src="product.minimgsrc" style="max-width:100%;max-height:300px"></div>-->
+		<div class="productImg" style="width:270px;height:270px;overflow:hidden;display:table-cell;vertical-align:middle;text-align:center;background:url(/product.maximgsrc) no-repeat;background-position:center;product.maximgcss"></div>
+		<div class="infoArea">
+			<div class="itemname">
+				<p class="name">product.name</p>
+				<span class="productAddcode">product.prmsg</span>
+				<span class="reviewArea">
+					<span class="reviewMark">product.reviewmark</span>
+					<span class="reviewCount">product.reviewcount</span>
+				</span>
+			</div>
+			<div class="itemprice">
+
+				<table style="margin:0px auto;">
+					<td>
+						<div class="customerprice" style="display:table-cell;width:20%;height:100%;vertical-align:middle;">product.pricetitle<br>product.ifcprice<span class="customerprice">product.cprice_txt</span><br />product.endcprice</div>
+					</td>
+					<td>
+						<p class="mainprprice"  style="display:table-cell;width:50%;height:100%;vertical-align:middle;text-align:center;">product.price_txt</p>
+					</td>
+					<td>product.ifcprice<div class="discountRate">product.discountRate</div>product.endcprice</td>
+				</table>
+
+<!--
+				product.ifcprice
+				<div class="discountRate">product.discountRate</div>
+				product.endcprice
+				<div class="priceTxtArea">
+					<div class="customerprice">
+						product.pricetitle<br>
+						product.ifcprice<p>product.cprice_txt</p>product.endcprice
+					</div>
+					<p class="mainprprice" style="clear:both;">product.price_txt</p>
+				</div>
+-->
+
+			</div>
+		</div>
+		</a>
+		<dl class="quickView">
+			<dd class="qpreview" onClick="quickView('product.productcode');"><span class="qtext"></span></dd>
+<!--			<dd class="qzoom" onClick="quickZoom('product.productcode');"><span class="qtext"></span></dd>-->
+			<dd class="qfavorite" onClick="quickFavorite('product.productcode','product.chkquantity');"><span class="qtext"></span></dd>
+			product.ifprebasket<dd class="qcart" onClick="quickCart('product.productcode','product.chkquantity');"><span class="qtext"></span></dd>product.endprebasket
+<!--			<dd class="qorder product.ClassType" onClick="quickOrder('product.productcode','product.chkquantity');"><span class="qtext"></span></dd>-->
+		</dl>
+	</div>
+<!-- /items -->
+</div>

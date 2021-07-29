@@ -1,0 +1,77 @@
+<!-- 메인 소품 신상품 목록 -->
+<link rel="stylesheet" type="text/css" href="/css/newUI.css" />
+
+<style type="text/css">
+#__ID__{ clear:both;overflow:hidden;}
+#__ID__ .productWrapper{ display:inline-block; width:19%;height:auto;margin:0% 0.5%;text-align:center;border:1px solid #e7e9ef;background:#d5d9df;box-sizing:border-box; }
+#__ID__ .productWrapper .infoArea{ position:absolute; top:300px; padding-bottom:15px;
+/* Fallback for web browsers that doesn't support RGBa */
+background: rgba(213, 217, 223, 0.95);
+/* RGBa with 0.6 opacity */
+/*background: rgba(0, 0, 0, 0.8);*/
+background: rgba(213, 217, 223, 0.95);
+/* For IE 5.5 - 7*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/* For IE 8*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; 
+}
+
+#__ID__ .productWrapper .rentIcon,#__ID__ .productWrapper .sellIcon{ top:0px;}
+
+#__ID__ .productWrapper.over .infoArea{top:240px;}
+
+#__ID__ .productWrapper .infoArea .itemname{ height:40px; padding:8px 8px 0px 8px; color:#586570;}
+#__ID__ .productWrapper .infoArea .itemprice{ height:30px; text-align:right; vertical-align:bottom; padding-right:8px;}
+#__ID__ .productWrapper .infoArea .itemprice .mainconprice{ color:#e1e1e1}
+
+#__ID__ .productWrapper .reviewArea .reviewMark *{ color:#ababab;}
+#__ID__ .productWrapper .reviewArea .reviewMark .active{color:#fff}
+
+#__ID__ div.endItem{}
+</style>
+
+<script language="javascript" type="text/javascript">
+$j(function(){
+	$j('#__ID__').find('.productWrapper').on('mouseover',function(e){ overItem(this)});
+	$j('#__ID__').find('.productWrapper').on('mouseout',function(e){ leaveItem(this)});
+});
+</script>
+
+<div id="__ID__" style="display:none">
+<!-- items -->
+	<div class="productWrapper product.listfinal" style="cursor:pointer">
+		<a href="product.linkurl">
+		product.saleTypeIcon
+		<div class="productImg" style="display:table-cell;height:360px;vertical-align:middle;text-align:center;overflow:hidden;"><img src="product.minimgsrc" style="max-width:100%;max-height:300px"></div>
+		<div class="infoArea">
+			<div class="itemname">
+				<p>product.name</p>
+				<span style="color:#bbbbbb">product.addcode</span>
+				<span class="reviewArea">
+					<span class="reviewMark">product.reviewmark</span>
+					<span class="reviewCount">product.reviewcount</span>
+				</span>
+			</div>
+			<div class="itemprice">
+				product.ifcprice
+				<div class="discountRate">product.discountRate</div>
+				product.endcprice
+				<div class="priceTxtArea">
+					<div class="customerprice">
+						product.ifcprice<p>product.cprice_txt</p>product.endcprice
+					</div>
+					<p class="mainprprice" style="clear:both;">product.price_txt</p>
+				</div>
+			</div>
+		</div>
+		</a>
+		<dl class="quickView">
+			<dd class="qpreview" onClick="PrdtQuickCls.quickView('product.productcode');"><span class="qtext"></span></dd>
+			<dd class="qzoom" onClick="quickZoom('product.productcode');"><span class="qtext"></span></dd>
+			<dd class="qfavorite" onClick="quickFavorite('product.productcode','product.chkquantity');"><span class="qtext"></span></dd>
+			<dd class="qcart" onClick="quickCart('product.productcode','product.chkquantity');"><span class="qtext"></span></dd>
+			<dd class="qorder product.ClassType" onClick="quickOrder('product.productcode','product.chkquantity');"><span class="qtext"></span></dd>
+		</dl>
+	</div>
+<!-- /items -->
+</div>

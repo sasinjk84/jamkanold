@@ -1,0 +1,41 @@
+/* 장바구니 */
+.basket_speed_title {font-size:11px; color:#999999; letter-spacing:-1px; padding-top:3px; padding-left:15px;}
+.basket_use_info {color:#555555;  font-size:11px; letter-spacing:-0.5px; word-break:break-all; font-weight:bold; line-height:130%; padding:5px 15px 0px 0px;}
+.basket_pro_option {font-size:11px; letter-spacing:-0.5px; word-break:break-all;}
+.basket_list_title { font-size:12px; color:#444444; letter-spacing:-0.5px; font-weight:bold; height:30px; text-align:center; background-color:#F8F8F8;}
+.basket_total_price {color:ee0a02; font-family:verdana; font-size:20px; line-height:120%}
+.basket_etc_price {font-size:18px;line-height:120%}
+.basket_etc_price2 {font-size:18px;line-height:120%}
+.basket_etc_price3 {color:#dc0103;font-weight:bold;font-size:18px;line-height:120%}
+.basket_etc_price4 {color:#dc0103;}
+
+.itemListTbl {border-top:1px solid #f2f2f2;}
+.itemListTbl th{height: 50px;background: #f9f9f9;/* border-right: 1px solid #f2f2f2; */border-bottom: 1px solid #f2f2f2;color: #848484;text-align: center;font-weight: 400;font-size: 14px;}
+.itemListTbl .tdstyle {border-right:1px solid #f2f2f2;border-bottom:1px solid #f2f2f2; padding:10px 0px;}
+.itemListTbl .tdstyle2 {border-bottom:1px solid #f2f2f2;padding:10px 6px;}
+.itemListTbl .tdstyle2a {text-align:center;border-bottom:1px solid #f2f2f2;padding:10px 0px;}
+.itemListTbl .tdstyle3a {border-bottom:1px solid #f2f2f2;padding:10px 0px 10px 10px;}
+.itemListTbl .tdstyle3{padding:25px 10px;line-height:25px;text-align:right;border-bottom:1px solid #f2f2f2;}
+.itemListTbl .tdstyle4 {border-bottom:1px solid #f2f2f2;padding:0px;}
+.priceListTbl {border:1px solid #aaaaaa;}
+.priceListTbl th{padding: 15px 0px;background: #f9f9f9;border-right: 1px solid #f2f2f2;border-bottom: 1px solid #f2f2f2;/* color: #444444; */text-align: center;font-weight: 500;}
+.priceListTbl .tdstyle {padding:12px 0px;border-right:1px solid #e5e5e5}
+.priceListTbl .tdstyle2 {padding:12px 0px}
+
+.icon_plus{position: absolute;top: 32px;right: -15px;width: 30px;height: 30px;line-height: 30px;background: #aaaaaa;color: #ffffff;font-size: 20px;/* font-weight: bold; */text-align: center;border-radius: 3px;}
+.icon_equal{position: absolute;top: 32px;left: -15px;width: 30px;height: 30px;line-height: 30px;background: #aaaaaa;color: #ffffff;font-size: 20px;/* font-weight: bold; */text-align: center;border-radius: 3px;}
+
+.basket_icon{display:inline-block;*display:inline;zoom:1;padding:2px 4px;border:1px solid #ddd;border-radius:2px;color:#aaa;font-size:11px;letter-spacing:-0.5px;}
+
+/*장바구니 옵션변경창*/
+#wrapOptChange{padding:10px;}
+.prInfoTable{width:96%;margin:20px auto;border:1px solid #eeeeee;}
+.prInfoTable table{margin:10px;}
+.prInfoTable select{display:block;width:90%;margin-top:4px;}
+.prInfoTable .prname{text-align:left; font-weight:bold;}
+.prInfoTable .prmsg{text-align:left;}
+.prInfoTable .prprice{margin-top:4px;}
+.prInfoTable .oldprice{text-decoration:line-through;}
+.prInfoTable .prreserve{margin-top:4px;}
+.saveBtnArea{margin:10px 0px;text-align:center;}
+.saveBtnArea img:hover { cursor:pointer; }

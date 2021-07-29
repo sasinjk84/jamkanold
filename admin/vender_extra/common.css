@@ -1,0 +1,11 @@
+/* 상품 상세 정보내 상품 정보 고시 관련 내용 테이블 */
+.formtbl{font-size:11px; line-height:200%; width:100%;}
+.formtbl caption{ background:#f5f5f5; color:#666666; font-weight:bold; padding:10px; border-top:1px solid #222; border-bottom:1px solid #ddd; visibility:visible;}
+.formtbl th{ background:#f5f5f5; padding:10px 15px;; color:#666; text-align:left; font-weight:bold; border-bottom:1px solid #ddd; width:170px;}
+.formtbl td{ border-bottom:1px solid #ddd; padding:10px 15px; background:#fff}
+
+
+.listTbl{font-size:11px; line-height:200%; width:100%;  border-left:1px solid #ddd;}
+.listTbl caption{ background:#f5f5f5; color:#666666; font-weight:bold; padding:5px; text-align:left; border-top:1px solid #222; border-bottom:1px solid #ddd; visibility:visible;}
+.listTbl th{ background:#f5f5f5; padding:5px 0px; color:#666; font-weight:bold; border-bottom:1px solid #ddd; border-right:1px solid #ddd;}
+.listTbl td{ border-bottom:1px solid #ddd; border-right:1px solid #ddd; padding:10px 15px;}

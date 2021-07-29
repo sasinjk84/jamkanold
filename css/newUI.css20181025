@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*상품 오버시 출력되는 부분-------------------------*/
+.productWrapper{ width:270px; height:314px; overflow:hidden; float:left; margin:20px 10px 30px 0px; border:1px solid #f5f6fa; background:#fff; position:relative;}
+.productWrapper.over{border:1px solid #e21f36;}
+
+
+.productWrapper .infoArea{ position:absolute; bottom:-40px; width:100%;
+/* Fallback for web browsers that doesn't support RGBa */
+background: rgba(255, 255, 255, 0.95);
+/* RGBa with 0.6 opacity */
+background: rgba(255, 255, 255, 0.95);
+/*background: rgba(255, 255, 255, 0.8);*/
+/* For IE 5.5 - 7*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/* For IE 8*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; 
+}
+
+#TOP_NEW div.endItem {margin: 20px 8px 30px 0px;}
+#TOP_BEST div.endItem {margin: 20px 8px 30px 0px;}
+#TOP_HOT div.endItem {margin: 20px 8px 30px 0px;}
+
+.productWrapper .rentIcon{ display:inline-block; width:34px; height:15px; background:url(/upload/img/icon/rent.gif) no-repeat; font-size:0px; position:absolute; top:200px;}
+.productWrapper .sellIcon{ display:inline-block; width:43px; height:43px; background:url(/upload/img/icon/sell.gif) no-repeat; font-size:0px; position:absolute; top:0px;}
+.productWrapper.over .rentIcon,.productWrapper.over .sellIcon{ display:none}
+
+
+
+.productWrapper.over .infoArea{width:100%; bottom:0px;}
+.productWrapper.over .quickView{ display:block}
+
+.productWrapper .infoArea .itemname{ height:42px; padding:8px 8px 8px 8px}
+
+.productWrapper .reviewArea{display:block; margin:0px 0px 10px;}
+.productWrapper .reviewArea .reviewMark *{ color:#aaaaaa; display:inline; width:12px; height:12px;}
+.productWrapper .reviewArea .reviewMark .active{color:#e21f36;}
+.productWrapper .reviewArea .reviewCount{}
+
+/*상품가격, 할인률*/
+.productWrapper .infoArea .itemprice{ height:60px; text-align:left; padding-right:8px;}
+.productWrapper .infoArea .itemprice .customerprice{padding:3px 0px;text-decoration: line-through;text-align:left;}
+.productWrapper .infoArea .itemprice .discountRate{ width:39px; height:33px; display: inline; float:right; background:url(/upload/img/icon/discountbg.png) no-repeat; margin-left:10px; font-weight:bold; color:white; text-align:center; font-size:12px; margin-top: 20px;}
+.productWrapper .infoArea .itemprice .priceTxtArea{ width:60%; float:left; text-align:left; display: inline;padding:10px 0px 0px 10px;}
+
+
+/*상품오버시 퀵버튼*/
+.quickView{display:none;position:absolute;top:0px;left:0px;background:#FFF;width:100%;height:50px;font-size:0px;cursor:pointer;overflow:hidden;z-index:9999;}
+.quickView dd{float:left;width:20%; height:50px; overflow:hidden; background:url('/images/common/icon_qview.png') no-repeat;}
+.quickView dd .qtext{width:54px; height:27px; overflow: hidden; background:url('/images/common/qview_title.gif') no-repeat; position:absolute;margin-left:0px;margin-top:33px;display:none;}
+.quickView dd.end{margin:0px;}
+
+
+.quickView dd.qpreview{ background-position:-10px 0px;}
+.quickView dd.qpreview:hover{ background-position:-10px -50px;}
+.quickView dd.qpreview:hover .qtext{ display:none;}
+
+
+.quickView dd.qfavorite{ background-position:-108px 0px;}
+.quickView dd.qfavorite .qtext{background-position:-112px 0px;}
+.quickView dd.qfavorite:hover{ background-position:-108px -50px;}
+.quickView dd.qfavorite:hover .qtext{ display:none;}
+
+
+.quickView dd.qcart{ background-position:-155px 0px;}
+.quickView dd.qcart .qtext{background-position:-168px 0px;}
+.quickView dd.qcart:hover{ background-position:-155px -50px;}
+.quickView dd.qcart:hover .qtext{ display:none;}
+
+
+.quickView dd.qorder{ background-position:-205px 0px;}
+.quickView dd.qorder .qtext{background-position:-224px 0px;}
+.quickView dd.qorder:hover{ background-position:-205px -50px;}
+.quickView dd.qorder:hover .qtext{ display:none}
+/*
+.quickView dd.rentalItem .qtext{background-position:-280px 0px;}
+*/
+
+
+.quickView dd.qzoom{ background-position:-60px 0px;}
+.quickView dd.qzoom .qtext{background-position:-56px 0px;}
+.quickView dd.qzoom:hover{ background-position:-60px -50px;}
+.quickView dd.qzoom:hover .qtext{ display:none;}
+/*상품오버시 퀵버튼*/
+
+
+/*상품 오버시 출력되는 부분-------------------------*/

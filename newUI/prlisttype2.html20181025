@@ -1,0 +1,55 @@
+<!-- 메인 하단 베스트 셀러 -->
+<link rel="stylesheet" type="text/css" href="/css/newUI.css" />
+<style type="text/css">
+#__ID__{ clear:both; padding-bottom:1px; height:250px; padding-left:8px;}
+#__ID__ .productWrapper{ width:270px; height:320px; }
+#__ID__ .productWrapper .infoArea{ position:absolute; top:260px; width:270px;}
+#__ID__ .productWrapper.over .infoArea{top:200px;}
+#__ID__ .productWrapper .rentIcon,#__ID__ .productWrapper .sellIcon{ top:0px;}
+</style>
+<script language="javascript" type="text/javascript">
+
+$j(function(){
+	$j('#__ID__').find('.productWrapper').on('mouseover',function(e){ overItem(this)});
+	$j('#__ID__').find('.productWrapper').on('mouseout',function(e){ leaveItem(this)});
+});
+
+</script>
+<div id="__ID__">
+<!-- items -->
+	<div class="productWrapper product.listfinal" style="cursor:pointer;margin-bottom:10px;">
+		<a href="product.linkurl">
+		product.saleTypeIcon
+		<div class="productImg" style="width:270px;height:270px;overflow:hidden;display:table-cell;vertical-align:middle;text-align:center"><img src="product.minimgsrc" style="max-width:270px;max-height:270px"></div>
+		<div class="infoArea">
+			<div class="itemname">
+				<p style="height:30px;">product.name</p>
+				<span style="color:#bbbbbb">product.addcode</span>
+				<span class="reviewArea">
+					<span class="reviewMark">product.reviewmark</span>
+					<span class="reviewCount">product.reviewcount</span>
+				</span>
+			</div>
+			<div class="itemprice">
+				product.ifcprice
+				<div class="discountRate">product.discountRate</div>
+				product.endcprice
+				<div class="priceTxtArea">
+					<div class="customerprice">
+						product.ifcprice<p>product.cprice_txt</p>product.endcprice
+					</div>
+					<p class="mainprprice" style="clear:both;">product.price_txt</p>
+				</div>
+			</div>
+		</div>
+		</a>
+		<dl class="quickView">
+			<dd class="qpreview" onClick="PrdtQuickCls.quickView('product.productcode');"><span class="qtext"></span></dd>
+			<dd class="qzoom" onClick="quickZoom('product.productcode');"><span class="qtext"></span></dd>
+			<dd class="qfavorite" onClick="quickFavorite('product.productcode','product.chkquantity');"><span class="qtext"></span></dd>
+			<dd class="qcart" onClick="quickCart('product.productcode','product.chkquantity');"><span class="qtext"></span></dd>
+			<dd class="qorder product.ClassType" onClick="quickOrder('product.productcode','product.chkquantity');"><span class="qtext"></span></dd>
+		</dl>
+	</div>
+<!-- /items -->
+</div>
